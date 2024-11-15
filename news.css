@@ -1,0 +1,631 @@
+@font-face {
+    font-family: myfont;
+    src: url(resources/Kolligio.ttf);
+}
+*{
+    margin: 0px;
+    padding-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("resources/R.jpeg");
+    background-size:cover;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: maroon;
+}
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists li{
+    list-style: none;
+    margin-left: 20px;
+}
+.items{
+    text-decoration: none;
+    font-family: Medusa Gothic Regular;
+    font-size: 20px;
+    color: url("resources/R.jpeg");
+    color: maroon;
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: skyblue;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px rgba(255,255,255,1);
+}
+.items:hover:after{
+    width: 100%;
+}
+.items:is(:link, :active, :visited).active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    height: 70px;
+    z-index: 1;
+}
+header:hover{
+    background:linear-gradient(to right, rgba(24, 44, 73,0.5), rgba(41, 102, 188,0.5));
+    
+}
+.login form button{
+   background-color: transparent;
+   border: 1px solid rgb(192, 192, 192);
+   padding: 5px 8px;
+   font-size: 16px;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    left: 0%;
+    top: 70px;
+    width: 100%;
+    height: 150%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.container div{
+    /* border: 1px solid black; */
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    font-size: 60px;
+    justify-content: space-between;
+    font-family: myfont;
+}
+.item1 h1 span{
+    color: #dcb731;
+    -webkit-text-stroke: 2px black;
+}
+.item2{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.inner1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    opacity: 0;
+    animation: animation1 linear 0.5s forwards ;
+}
+@keyframes animation1  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation2  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation3  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation4  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation5  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation6  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation7  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation1  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation8  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation9  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation10  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation11  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation12  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation13  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation14  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation15  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation16  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation17  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation18  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation19  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation20  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation21  {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes animation22 {
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.inner1 h1{
+    text-align: center;
+    font-family: Agency FB;
+}
+.inner1 h2{
+    text-align: center;
+    font-family: Agency FB;
+}
+.inner1 p{
+    font-size: 30px;
+    font-family: Copperplate Gothic;
+    text-align: center;
+}
+.inner2{
+    opacity: 0;
+    animation: animation2 linear 0.5s forwards ;
+    animation-delay: 0.5s;
+}
+.inner2 p{
+    text-align: justify;
+    font-family: Edwardian Script ITC Regular;
+    font-size: 21px;
+}
+.inner3{
+    text-align: justify;
+    opacity: 0;
+    animation: animation3 linear 0.5s forwards ;
+    animation-delay: 1s;
+}
+.inner3 p span{
+    font-family: Old English Text MT Regular;
+    font-size: 20px;
+}
+.inner4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    font-size: 35px;
+    opacity: 0;
+    animation: animation4 linear 0.5s forwards ;
+    animation-delay: 1.5s;
+}
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: animation5 linear 0.5s forwards ;
+    animation-delay: 2s;
+}
+.item3 h1{
+    font-family: Agency FB;
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 5px 10px 10px rgba(255,255,255,1);
+}
+.item4{
+    font-family: French Script MT Regular;
+    font-size: 25px;
+    text-align: justify;
+    opacity: 0;
+    animation: animation6 linear 0.5s forwards ;
+    animation-delay: 2.5s;
+}
+.item5{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    font-family: Matura MT Script Capitals Regular;
+    text-align: justify;
+    opacity: 0;
+    animation: animation7 linear 0.5s forwards ;
+    animation-delay: 3s;
+}
+.item6{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 60px;
+    opacity: 0;
+    animation: animation8 linear 0.5s forwards ;
+    animation-delay: 3.5s;
+}
+.item7{
+    grid-row-start: 5;
+    grid-row-end: 8;
+    display: flex;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Niagara Engraved Regular;
+    opacity: 0;
+    animation: animation9 linear 0.5s forwards ;
+    animation-delay: 4s;
+}
+.item7 h1{
+    font-family: Bernard MT Condensed;
+    writing-mode: vertical-lr;
+    text-orientation:sideways-right;
+    font-size: 60px;
+    text-align: right;
+}
+.item8{
+    grid-row-start: 5;
+    grid-row-end: 8;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Niagara Engraved Regular;
+    opacity: 0;
+    animation: animation10 linear 0.5s forwards ;
+    animation-delay: 4.5;
+    
+}
+.item8 h1 {
+    font-family: Elephant;
+    font-size: 90px;
+    color: black;
+    float: left;
+}
+.item9{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    opacity: 0;
+    animation: animation11 linear 0.5s forwards ;
+    animation-delay: 5s;
+}
+.item10{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    opacity: 0;
+    animation-delay: 1s;
+    animation: animation12 linear 0.5s forwards ;
+    animation-delay: 5.5s;
+}
+.item10 h1{
+    font-family: Broadway Regular;
+    margin-left: 10px;
+    font-size: 60px;
+}
+.item11{
+    position: relative;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start:4 ;
+    grid-column-end: 6;
+    text-align: justify;
+    opacity: 0;
+    animation-delay: 1s;
+    animation: animation13 linear 0.5s forwards ;
+    animation-delay: 6s;
+}
+.item11 h1{
+    font-size: 90px;
+    display: inline;
+    float: left;
+}
+.item11 p{
+    font-family: Bradley Hand ITC Regular;
+    font-weight: bold;
+}
+.item12{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: justify;
+    opacity: 0;
+    animation-delay: 1s;
+    animation: animation14 linear 0.5s forwards ;
+    animation-delay: 6.5s;
+}
+.item12 img{
+    float: left ;
+}
+.item12 p{
+    font-family: Catharsis Requiem Regular;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item14{
+    grid-row-start: 10;
+    grid-row-end: 15;
+    text-align: justify;
+    opacity:0;
+    animation: animation16 linear 0.5s forwards ;
+    animation-delay: 7.5s;
+}
+.item13{
+    font-family: Blackadder ITC Regular;
+    font-size: 22.5px;
+    text-align: justify;
+    opacity:0;
+    animation: animation15 linear 0.5s forwards ;
+    animation-delay: 7s;
+}
+.item14 h1{
+    font-size: 45px;
+    margin: 0;
+    font-family: Goudy Stout Regular;
+}
+.item14 .left1{
+    float: left;
+    writing-mode: vertical-lr;
+    text-orientation:sideways-right ;
+    font-size: 30px;
+    font-family: Colonna MT Regular;
+}
+.item14 .left2{
+    float: left;
+    font-size: 60px;
+    color: black;
+    -webkit-text-stroke: 0.2px white;
+    font-family: Algerian Regular;
+}
+.item14 p{
+    font-family: Old English Text MT Regular;
+}
+
+.item15{
+     grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    text-align: justify;
+    opacity:0;
+    animation: animation17 linear 0.5s forwards ;
+    animation-delay: 8s;
+}
+.item15 h1{
+    float: left;
+    font-size: 60px;
+    font-family: Stencil Regular;
+}
+.item15 p{
+    font-family: Algerian Regular;
+    font-size: 13px;
+}
+.item16{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    text-align: center;
+    font-family: Elephant;
+    font-size: 25px;
+    opacity:0;
+    animation: animation18 linear 0.5s forwards ;
+    animation-delay: 8.5s;
+}
+.item17{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    display: flex;
+    font-family: Catharsis Requiem Regular;
+    font-size: 30px;
+    opacity:0;
+    animation: animation19 linear 0.5s forwards ;
+    animation-delay: 9s;
+}
+.item18{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    opacity:0;
+    animation: animation20 linear 0.5s forwards ;
+    animation-delay: 9.5s;
+}
+.item19{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    text-align: center;
+    opacity:0;
+    animation: animation21 linear 0.5s forwards ;
+    animation-delay: 10s;
+}
+.item20{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    opacity:0;
+    animation: animation22 linear 0.5s forwards ;
+    animation-delay: 10.5s;
+}
+.item20 h1{
+    font-family: Cooper Black;
+    font-size: 35px;
+}
+.item20 p{
+    font-family: Harrington Regular;
+    font-weight: bold;
+    text-align: justify;
+}
+.login button{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+}
+.login button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}

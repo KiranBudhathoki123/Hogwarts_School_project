@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-size: contain;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: rgb(192, 192, 192);
+}
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists li{
+    list-style: none;
+    margin-left: 20px;
+}
+.items{
+    text-decoration: none;
+    font-family: Medusa Gothic Regular;
+    font-size: 20px;
+    color: url("resources/R.jpeg");
+    color: rgb(192, 192, 192);
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: skyblue;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px rgba(255,255,255,1);
+}
+.items:hover:after{
+    width: 100%;
+}
+.items:is(:link, :active, :visited).active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    height: 70px;
+}
+header:hover{
+    background:linear-gradient(to right, rgba(24, 44, 73,0.5), rgba(41, 102, 188,0.5));
+    
+}
+.login form button{
+   background-color: transparent;
+   border: 1px solid rgb(192, 192, 192);
+   padding: 5px 8px;
+}
+.login form button a{
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}

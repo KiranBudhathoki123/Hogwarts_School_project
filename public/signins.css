@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: linear-gradient(140deg, black,rgb(23, 23, 41),rgb(15, 15, 56),black); */
+    background-color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.email{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 40px;
+    padding-right: 20px;
+    width: fit-content;
+}
+.password{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 40px;
+    padding-left: 20px;
+    width: fit-content;
+}
+#email{
+    border: none;
+    background: none;
+    font-size: 20px;
+    margin-left: 20px;
+    height: max-content;
+    color: rgb(238, 226, 155);
+    font-family: aileron thin;
+}
+#password{
+    border: none;
+    background: none;
+    font-size: 20px;
+    margin-left: 20px;
+    height: max-content;
+    color: rgb(238, 226, 155);
+    font-family: aileron thin;
+}
+
+#email:focus{
+    border: none;
+    background: none;
+    outline: none;
+}
+#password:focus{
+    border: none;
+    background: none;
+    outline: none;
+}
+#remember{
+    background-color: rgb(238, 226, 155);
+}
+.image-box{
+    background: rgb(238, 226, 155);
+    padding: 20px;
+    border-radius: 50%;
+}
+.remember{
+    color: rgb(238, 226, 155);
+    font-size:18px;
+}
+.btn-containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+button{
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.cancel{
+    background:none;
+    border: 2px solid rgb(238, 226, 155);
+}
+.cancel a{
+    text-decoration: none;
+    color: rgb(238, 226, 155);
+}
+#submit{
+    background-color: rgb(238, 226, 155);
+}
+.not-sign{
+    color:  rgb(238, 226, 155);
+}
+.not-sign a{
+    color: purple;
+}
+h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    color:  rgb(238, 226, 155);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.error{
+    color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+

@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-size: contain;
+    background:linear-gradient(30deg,#1c1412,#161c2d,#111d1f,#2f0a0a);
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: rgb(192, 192, 192);
+}
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists li{
+    list-style: none;
+    margin-left: 20px;
+}
+.items{
+    text-decoration: none;
+    font-family: Medusa Gothic Regular;
+    font-size: 20px;
+    color: url("resources/R.jpeg");
+    color: rgb(192, 192, 192);
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: skyblue;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px rgba(255,255,255,1);
+}
+.items:hover:after{
+    width: 100%;
+}
+.items:is(:link, :active, :visited).active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    height: 70px;
+}
+header:hover{
+    background:linear-gradient(to right, rgba(24, 44, 73,0.5), rgba(41, 102, 188,0.5));
+    
+}
+.login form button{
+   background-color: transparent;
+   border: 1px solid rgb(192, 192, 192);
+   padding: 5px 8px;
+}
+.login form button a{
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;  
+    column-gap: 30px;
+    row-gap: 100px;
+    width: 1200px;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    width: 1400px;
+    margin: auto;
+    font-size: 50px;
+    margin-top: 30px;
+    color:rgb(202, 202, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.heading span{
+    color: #AB987A;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+    margin-left: 0;
+}
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: rgb(13, 13, 49);
+    text-align: left;
+    padding: 20px;
+    width: fit-content;
+    padding-top: 100px;
+    border-radius: 20px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border: 4px solid rgb(13, 13, 48);
+    background-color: #AB987A;
+    font-family: Copperplate Gothic;
+}
+.image{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 65px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    box-shadow: -10px 10px 0px #111d1f;
+}
+.name{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.subject{
+    margin-bottom: 10px;
+    font-weight: 600;
+}.opt{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.dotts{
+    width: 4px;
+    height: fit-content;
+    cursor: pointer;
+    position: relative;
+}
+.del-btn{
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    padding: 2px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+.del-btn:hover{
+    background-color: rgb(195, 195, 195);
+}
+header button {
+    background: none;
+    padding: 5px 10px;
+}
+header button a{
+    color: white;
+    text-decoration: none;
+}

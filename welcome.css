@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(resources/R.jpeg);
+}
+.logo{
+    width: fit-content;
+    margin-top: 20px;
+    margin: auto;
+}
+.logo img{
+    width: 300px;
+    fill: mar;
+}
+.main_body{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+}
+.main_body p{
+    font-family: Brush Script MT;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.main_body img{
+    width: 250px;
+}
+footer{
+    margin-top: 30px;
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+footer h3{
+    font-family: Felix Titling ;
+    font-size: 35px;
+}
+footer p{
+    font-size: 25px;
+}
+.btn-containers{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    column-gap: 10px;
+}
+button{
+    padding: 5px 10px;
+    background: none;
+    width: 50%;
+}
+button a{
+    color: black;
+    font-family: Felix Titling;
+    text-decoration: none;
+}

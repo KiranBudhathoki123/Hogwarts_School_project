@@ -1,0 +1,155 @@
+@font-face {
+    font-family: myfont;
+    src: url(resources/Kolligio.ttf);
+}
+*{
+    margin: 0px;
+    padding-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: radial-gradient(rgb(85, 85, 85),black);
+    background-size:cover;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: maroon;
+}
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists li{
+    list-style: none;
+    margin-left: 20px;
+}
+.items{
+    text-decoration: none;
+    font-family: Medusa Gothic Regular;
+    font-size: 20px;
+    color: url("resources/R.jpeg");
+    color: rgb(175, 175, 175);
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: skyblue;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px rgba(255,255,255,1);
+}
+.items:hover:after{
+    width: 100%;
+}
+.items:is(:link, :active, :visited).active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    height: 70px;
+    z-index: 1;
+}
+header:hover{
+    background:linear-gradient(to right, rgba(24, 44, 73,0.5), rgba(41, 102, 188,0.5));
+    
+}
+.login form button{
+   background-color: transparent;
+   border: 1px solid rgb(192, 192, 192);
+   padding: 5px 8px;
+   font-size: 16px;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.two-sides{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.image{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.bubbles{
+    position: absolute;
+    width: 90%;
+    left: 80px;
+    top: -100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bubbles span{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0 0  10px white,
+    0 0 50px white,
+    0 0 100px white;
+    margin: 0 6px;
+    animation: animate 20s linear infinite;
+    animation-duration: calc(300s / var(--i));
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-300px) scale(0);
+    }
+    100%{
+        transform: translateY(200px) scale(1);
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    color: grey;
+}
+.heading{
+    width: 700px;
+}
+.heading h1{
+    font-size: 60px;
+}
+.para p{
+    font-size: 25px;
+}
+.login button{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+}
+.login button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}

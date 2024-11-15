@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("resources/553546-cool-dark-background-2560x1600-pictures.jpg");
+    background-size: contain;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: rgb(192, 192, 192);
+}
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists li{
+    list-style: none;
+    margin-left: 20px;
+}
+.items{
+    text-decoration: none;
+    font-family: Medusa Gothic Regular;
+    font-size: 20px;
+    color: url("resources/R.jpeg");
+    color: rgb(192, 192, 192);
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: skyblue;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px rgba(255,255,255,1);
+}
+.items:hover:after{
+    width: 100%;
+}
+.items:is(:link, :active, :visited).active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    height: 70px;
+    z-index: 1;
+}
+header:hover{
+    background:linear-gradient(to right, rgba(24, 44, 73,0.5), rgba(41, 102, 188,0.5));
+    
+}
+.login form button{
+   background-color: transparent;
+   color: rgb(192, 192, 192);
+   border: 1px solid rgb(192, 192, 192);
+   padding: 5px 8px;
+   font-size: 16px;
+   
+}
+button{
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.house-container{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.gryffindor{
+    position: relative;  
+}
+.gryf-color{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #620002;
+    opacity: 0.8;
+}
+.gryf-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slytherin{
+    position: relative;
+}
+.slyth-color{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #102b1a;
+    opacity: 0.9;
+}
+.slyth-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.raven-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.raven-color{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0d1738;
+    opacity: 0.9;
+}
+.hupple-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.hupple-color{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ca9c27;
+    opacity: 0.9;
+}
+.houses-logo{
+    position: absolute;
+    top: 41.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.houses-logo img{
+    z-index: 1;
+}
+.house-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    top: 0;
+}
+.one{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.gryff-info{
+    width: 400px;
+    text-align: center;
+}
+.gryff-info p{
+    font-family:Felix Titling Regular;
+    display: block;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: reveal 2s linear forwards
+}
+@keyframes reveal {
+    0%{
+        translate: 0 20px;
+    }
+    100%{
+        translate: none;
+        opacity: 1;
+    }
+}
+.gryff-info button a{
+    text-decoration: none;
+    color:white;
+    font-family: Edwardian Script ITC;
+}
+.gryff-info button{
+    font-size: 30px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid white;
+}
+.gryff-info button:hover{
+    box-shadow: 0px 20px 20px rgba(255,255,255,0.7);
+}
+.two{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.slyth-info{
+    width: 400px;
+    text-align: center;
+}
+.slyth-info p{
+    font-family:Felix Titling Regular;
+    display: block;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: reveal 2s linear forwards
+}
+@keyframes reveal {
+    0%{
+        translate: 0 20px;
+    }
+    100%{
+        translate: none;
+        opacity: 1;
+    }
+}
+.slyth-info button a{
+    text-decoration: none;
+    color:white;
+    font-family: Edwardian Script ITC;
+}
+.slyth-info button{
+    font-size: 30px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid white;
+}
+.slyth-info button:hover{
+    box-shadow: 0px 20px 20px rgba(255,255,255,0.7);
+}
+.login button{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+}
+.login button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(resources/background-01.png);
+    background-size:cover;
+}
+.container{
+    border: 1px solid black;
+    width: 1000px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba(255,255,255,1);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.signup{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(0,0,0,0.3);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-right: 100px;
+}
+h2{
+    font-family: Bahnschrift;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.feature{
+    position: relative;
+}
+.character{
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+}
+form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.signup p{
+    margin-bottom: 30px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+fieldset input{
+    width: 100%;
+}
+legend{
+    color: white;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.checkbox{
+    margin-bottom: 20px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+input{
+   background: transparent;
+   border: none;
+   outline: none;
+   color: white;
+   font-family: AIleron;
+   font-size: 20px;
+}
+input:focus{
+    box-shadow: none;
+}
+.submit{
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(101, 12, 101);
+}
+.cancel a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+.cancel{
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.file-input-wrapper {
+position: relative;
+display: inline-block;
+}
+.error-fieldset{
+    border:2px solid red;
+}
+.file-input {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+
+.custom-file-input {
+display: inline-block;
+padding: 8px 12px;
+background-color: rgb(101, 12, 101); /* Set your desired background color */
+color: white; /* Set your desired text color */
+border-radius: 4px;
+cursor: pointer;
+}
+.error{
+    color: red;
+}
